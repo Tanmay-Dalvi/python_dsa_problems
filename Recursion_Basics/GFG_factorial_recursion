@@ -1,0 +1,11 @@
+class Solution:
+    def factorial(self, n: int) -> int:
+        # Base case
+        if n == 0 or n == 1:
+            return 1
+        
+        # Recursive case
+        return n * self.factorial(n - 1)
+
+# factorial_solution = Solution()
+# print(factorial_solution.factorial(5))  # Output: 120
